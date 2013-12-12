@@ -27,6 +27,7 @@
     <script src="js/app.js"></script>
     <script src="js/services.js"></script>
     <script src="js/controllers.js"></script>
+	
   </head>
 
   <!-- 'starter' is the name of this angular module (js/app.js)-->
@@ -40,5 +41,17 @@
       <!-- where the content of each page will be rendered -->
       <ng-view></ng-view>
     </pane>
+  <script>
+	document.addEventListener("DOMContentLoaded",loadbarcode);
+	function loadbarcode(){
+		cordova.plugins.barcodeScanner.encode(BarcodeScanner.Encode.TEXT_TYPE, "http://www.nytimes.com", function(success) {
+            alert("encode success: " + success);
+          }, function(fail) {
+            alert("encoding failed: " + fail);
+          }
+        );
+	};
+  </script>
   </body>
+  
 </html>
