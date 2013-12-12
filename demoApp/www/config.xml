@@ -1,10 +1,10 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.phonegap.demoApp" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="com.phonegap.inexgengames" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>iNexgenGames</name>
     <description>
         iNexgen games info
     </description>
-    <author email="max@drifty.com" href="http://ionicframework.com">
+    <author email="rajkumar.k.msc@gmail.com" href="http://www.inexgengames.com">
         iNexgen Games Technologies Pvt Ltd
     </author>
     <content src="index.html" />
