@@ -1,9 +1,11 @@
-		var function readBarcode(){
-		cordova.plugins.barcodeScanner.encode(BarcodeScanner.Encode.TEXT_TYPE, "http://www.nytimes.com", function(success) {
-            alert("encode success: " + success);
-          }, function(fail) {
-            alert("encoding failed: " + fail);
-          }
-        );
+var scanCode = function() {
+    window.plugins.barcodeScanner.scan(
+        function(result) {
+        alert("Scanned Code: " + result.text 
+                + ". Format: " + result.format
+                + ". Cancelled: " + result.cancelled);
+    }, function(error) {
+        alert("Scan failed: " + error);
+    });
 }
-document.addEventListener('DOMContentLoaded',readBarcode);
+document.addEventListener('DOMContentLoaded',scanCode);
