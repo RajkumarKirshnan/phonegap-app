@@ -12,7 +12,9 @@
     <description>
       iNexgen games developer community. 
     </description>
-
+	<feature name="Camera">
+    <param name="android-package" value="org.apache.cordova.CameraLauncher" />
+	</feature>
     <author href="https://build.phonegap.com" email="support@phonegap.com">
       Hardeep Shoker 
     </author>
@@ -23,4 +25,5 @@
     <preference name="UIWebViewBounce" value="false" />
     <!-- We'll include the Barcode plugin as an example -->
     <gap:plugin name="com.phonegap.plugins.barcodescanner" />
+	<gap:plugin name="org.apache.cordova.camera" version="0.2.3" />
 </widget>

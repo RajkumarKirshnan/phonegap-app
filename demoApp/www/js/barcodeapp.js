@@ -1,5 +1,5 @@
 var scanCode = function() {
-    window.plugins.barcodeScanner.scan(
+    cordova.plugins.barcodeScanner.scan(
         function(result) {
         alert("Scanned Code: " + result.text 
                 + ". Format: " + result.format
@@ -9,3 +9,16 @@ var scanCode = function() {
     });
 }
 document.addEventListener('DOMContentLoaded',scanCode);
+document.getElementById("captureImage").addEventListener('click', function(){
+		navigator.camera.getPicture(onSuccess, onFail, { quality: 50,
+		destinationType: Camera.DestinationType.DATA_URL
+	});
+});
+function onSuccess(imageData) {
+    var image = document.getElementById('myImage');
+    image.src = "data:image/jpeg;base64," + imageData;
+}
+
+function onFail(message) {
+    alert('Failed because: ' + message);
+}

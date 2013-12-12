@@ -8,7 +8,7 @@
   <tabs tabs-style="tabs-icon-top" tabs-type="tabs-positive" animate-nav="false">
 
     <!-- Pets tab -->
-    <tab title="Employess" icon="icon ion-home" ng-controller="PetsTabCtrl">
+    <tab title="Developers" icon="icon ion-home" ng-controller="PetsTabCtrl">
       <content has-header="true" has-tabs="true">
         <list>
           <link-item ng-repeat="pet in pets" type="item-text-wrap" href="#/pet/{{pet.id}}">
@@ -28,6 +28,10 @@
         </div>
         <div class="list list-inset">
           <label class="item item-input">
+            <span class="input-label">Your Image</span>
+            <img src="" style="width:100px;height:100px" id="myImage">
+          </label>
+		  <label class="item item-input">
             <span class="input-label">Your name</span>
             <input type="text">
           </label>
