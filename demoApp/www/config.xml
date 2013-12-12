@@ -12,5 +12,5 @@
     <preference name="fullscreen" value="true" />
     <preference name="webviewbounce" value="false" />
     <preference name="UIWebViewBounce" value="false" />
-	<gap:plugin name="org.apache.cordova.battery-status" version="0.1.0" />
+	<gap:plugin name="com.phonegap.plugins.demoApp" version="0.1.0" />
 </widget>
